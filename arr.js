@@ -195,3 +195,36 @@ console.log(nombresFois2);
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
+const etage = 10;
+
+for (let i = 0; i <= etage; i++) {
+    let line = "";
+
+    for (let s = 0; s < etage - i; s++) {       // a chaque ligne on retire l'index de celle-ci au nombre total d'etage. 
+        line += " ";
+    }
+
+    for (let j = 0; j < i * 2 - 1; j++) {       // a chaque index de ligne on double les etoile - 1 pour faire une suite paire. 1..3..5
+        line += "*";
+    }
+    console.log(line);
+    
+}
+
+for (let i = etage; i >= 0; i--) {              // inversé le sens de la piramide
+    let line = "";
+
+    for (let s = 0; s < etage - i; s++) {
+        line += " ";
+    }
+
+    for (let j = 0; j < i * 2 - 1; j++) {
+        line += "*";
+    }
+    console.log(line);
+    
+}
+
+
+
+
